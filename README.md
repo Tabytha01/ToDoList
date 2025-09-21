@@ -19,3 +19,7 @@ Tech I used
 3. External css for extra styling
 4. JavaScritp
 
+How to use it
+1.Type the task
+2.Choose the priority level
+
