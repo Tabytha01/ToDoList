@@ -23,4 +23,5 @@ How to use it
 1.Type the task
 2.Choose the priority level
 3.Click Add task
-4.Your task will appear in the list with a date and time and the color depends on which level it is in
+4.Your task will appear in the list with a date and time and the color depends on which level it is in.
+5.Click delete to remove a task
