@@ -1,0 +1,27 @@
+li:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+button {
+  font-weight: bold;
+}
+@keyframes slideFadeLoop {
+  0% {
+    opacity: 0.3;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: translateY(-10px);
+  }
+}
+
+h1 {
+  animation: slideFadeLoop 2s ease-in-out infinite;
+}
+
+
+
