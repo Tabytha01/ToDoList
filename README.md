@@ -22,4 +22,5 @@ Tech I used
 How to use it
 1.Type the task
 2.Choose the priority level
+3.Click Add task
 
