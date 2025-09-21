@@ -1,8 +1,21 @@
 # ToDoList
-About This Project
+About this project ToDo List Web
 
-Hey there! This is my To Do List Application, built to help anyone stay organized and manage daily tasks easily. You can quickly add tasks, see when you added them, mark them complete/incomplete, delete tasks, and even set priority levels (High, Medium, Low).
+This project is here to help anyone to organise and manage his/her task easily. you can add a task, delete task, and even set priority levels (High, Medium, Low).
+I wanted this App 
 
-I wanted this app to be both useful and visually appealing, so it comes with a dark mode, smooth hover effects, and a continuous animated header. Everything you do is saved in your browser, so your tasks stick around even if you close the page.
+About This app to be both useful and visually, so it comes with a dark mode as it was requested, smooth hover efects, and continuous animated header , everything is saved in a brawser, so the task stick around even if you clode the page.
 
-This project helped me practice semantic HTML5, Tailwind CSS for styling, and JavaScript basics like functions, conditionals, loops, and DOM manipulation.
+This project helped me practice semantic HTML5, Tailwind css, and JavaScript basics like functions, conditionals, loops, and DOM manipulation.
+
+What you can do with it
+1. create/add a new task
+2. delete the task
+3. set the priority levels
+
+Tech I used
+1.HTML5
+2.Tailwind css
+3. External css for extra styling
+4. JavaScritp
+
