@@ -4,7 +4,7 @@ About this project ToDo List Web
 This project is here to help anyone to organise and manage his/her task easily. you can add a task, delete task, and even set priority levels (High, Medium, Low).
 
 
-About This app to be both useful and visually, so it comes with a dark mode as it was requested, smooth hover efects, and continuous animated header , everything is saved in a brawser, so the task stick around even if you clode the page.
+I wanted This app to be both useful and visually, so it comes with a dark mode as it was requested, smooth hover efects, and continuous animated header, everything is saved in a brawser, so the task stick around even if you clode the page.
 
 This project helped me practice semantic HTML5, Tailwind css, and JavaScript basics like functions, conditionals, loops, and DOM manipulation.
 
@@ -25,3 +25,7 @@ How to use it
 3.Click Add task
 4.Your task will appear in the list with a date and time and the color depends on which level it is in.
 5.Click delete to remove a task
+
+Hre's a screenshot of what i did.
+![]
+
