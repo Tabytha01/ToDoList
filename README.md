@@ -2,7 +2,7 @@
 About this project ToDo List Web
 
 This project is here to help anyone to organise and manage his/her task easily. you can add a task, delete task, and even set priority levels (High, Medium, Low).
-I wanted this App 
+
 
 About This app to be both useful and visually, so it comes with a dark mode as it was requested, smooth hover efects, and continuous animated header , everything is saved in a brawser, so the task stick around even if you clode the page.
 
