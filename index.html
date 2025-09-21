@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4 transition-colors duration-300">
+
+  <div class="bg-white shadow-lg rounded-xl p-6 w-full max-w-md">
+    <h1 class="text-2xl font-bold mb-4 text-center bg-text-black">ToDo List</h1>
+
+    <!-- Dark Mode Toggle -->
+     <div class="flex justify-end mb-2 mb-2">
+        <button id="darkModeBtn" class="w-35 bg-gray-800 text-white py-2 rounded-lg">Dark Mode</button>
+     </div>
+    
+
+    <!-- Task input -->
+    <input id="taskInput" type="text" placeholder="Enter your task" 
+           class="w-full border rounded-lg px-3 py-2 mb-2">
+
+    <!-- Priority -->
+    <select id="prioritySelect" class="w-full mb-2 border rounded-lg px-2 py-2">
+      <option value="High">High</option>
+      <option value="Medium" selected>Medium</option>
+      <option value="Low">Low</option>
+    </select>
+
+    <!-- Add Button -->
+    <button id="addBtn" class="w-full bg-blue-500 text-white py-2 rounded-lg">Add Task</button>
+
+    <!-- Task list -->
+    <ul id="taskList" class="mt-4 space-y-2"></ul>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
