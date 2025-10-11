@@ -11,7 +11,8 @@ This project helped me practice semantic HTML5, Tailwind css, and JavaScript bas
 What you can do with it
 1. create/add a new task
 2. delete the task
-3. set the priority levels
+3. Update the task
+4. set the priority levels
 
 Tech I used
 1.HTML5
@@ -28,5 +29,5 @@ How to use it
 
 Hre's a screenshot of what i did.
 
-![My Task List](ToDoList.png)
+![alt text](image.png)
 
