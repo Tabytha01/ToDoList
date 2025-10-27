@@ -1,58 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Epic Todo List</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500">
-  
-  <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl p-8 w-full max-w-2xl shadow-2xl border border-white border-opacity-30">
-    <div class="text-center mb-8">
-      <h1 class="text-5xl font-bold mb-2 text-white">
-      Todo List
-      </h1>
-      <p class="text-white text-sm">Organize your life in style</p>
-    </div>
-
-    <div class="flex justify-end mb-6">
-      <button id="darkModeBtn" class="px-6 py-2 bg-gray-800 text-white rounded-full font-semibold shadow-lg hover:bg-gray-700">
-        Dark Mode
-      </button>
-    </div>
-    
-    <div class="space-y-4 mb-6">
-      <input 
-        id="taskInput" 
-        type="text" 
-        placeholder="What needs to be done?"
-        class="w-full px-6 py-4 rounded-2xl border-2 border-white bg-white text-gray-800 placeholder-gray-500 text-lg font-medium shadow-lg"
-      >
-      
-      <div class="flex gap-4">
-        <select id="prioritySelect" class="flex-1 px-6 py-4 rounded-2xl border-2 border-white bg-white text-gray-800 font-semibold text-lg shadow-lg">
-          <option value="High">🔴 High Priority</option>
-          <option value="Medium" selected>🟡 Medium Priority</option>
-          <option value="Low">🟢 Low Priority</option>
-        </select>
-        
-        <button id="addBtn" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl">
-         Add Task
-        </button>
-      </div>
-    </div>
-
-    <div class="space-y-3 max-h-96 overflow-y-auto" id="taskListContainer">
-      <ul id="taskList" class="space-y-3"></ul>
-    </div>
-    
-    <div id="emptyState" class="text-center py-12">
-      <p class="text-white text-xl font-semibold"> No tasks yet!</p>
-      <p class="text-white text-sm mt-2">Add your first task to get started</p>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Todo List - React with Drag & Drop</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
