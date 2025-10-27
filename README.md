@@ -2,17 +2,17 @@
 
 A fully interactive Todo List web application built with React, TypeScript, and Tailwind CSS featuring drag-and-drop functionality for task reordering.
 
-## 🚀 Features
+##  Features
 
-- ✅ **Add Tasks**: Create new tasks with input validation
-- 🗑️ **Delete Tasks**: Remove tasks with a single click
-- ✔️ **Toggle Completion**: Mark tasks as completed with checkboxes
-- 🔄 **Drag & Drop Reordering**: Reorder tasks by dragging and dropping
-- 💾 **Persistent Storage**: Tasks are saved to localStorage
-- 📱 **Responsive Design**: Works seamlessly on desktop and mobile
-- 🎨 **Modern UI**: Clean, professional design with smooth animations
+-  **Add Tasks**: Create new tasks with input validation
+-  **Delete Tasks**: Remove tasks with a single click
+-  **Toggle Completion**: Mark tasks as completed with checkboxes
+-  **Drag & Drop Reordering**: Reorder tasks by dragging and dropping
+-  **Persistent Storage**: Tasks are saved to localStorage
+-  **Responsive Design**: Works seamlessly on desktop and mobile
+-  **Modern UI**: Clean, professional design with smooth animations
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: React 18 with TypeScript
 - **Styling**: Tailwind CSS
@@ -20,7 +20,7 @@ A fully interactive Todo List web application built with React, TypeScript, and 
 - **Build Tool**: Vite
 - **State Management**: React hooks (useState, useEffect)
 
-## 📦 Installation & Setup
+##  Installation & Setup
 
 1. **Install Dependencies**:
    ```bash
@@ -42,14 +42,14 @@ A fully interactive Todo List web application built with React, TypeScript, and 
    npm run preview
    ```
 
-## 🎯 Usage
+##  Usage
 
 1. **Adding Tasks**: Type your task in the input field and click "Add Task" or press Enter
 2. **Completing Tasks**: Click the checkbox next to any task to mark it as completed
 3. **Reordering Tasks**: Click and drag the grip handle (⋮⋮) to reorder tasks
-4. **Deleting Tasks**: Hover over a task and click the delete button (🗑️)
+4. **Deleting Tasks**: Hover over a task and click the delete button 
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 src/
@@ -62,7 +62,7 @@ src/
 └── index.css             # Global styles and Tailwind imports
 ```
 
-## 🎨 Design Features
+##  Design Features
 
 - **Gradient Background**: Beautiful purple-to-blue gradient
 - **Glass Morphism**: Semi-transparent containers with backdrop blur
@@ -70,7 +70,7 @@ src/
 - **Visual Feedback**: Clear indicators for drag states and interactions
 - **Accessibility**: Keyboard navigation support for drag operations
 
-## 🔧 Key Components
+##  Key Components
 
 ### TodoItem
 - Implements drag-and-drop using @dnd-kit/sortable
@@ -89,7 +89,7 @@ src/
 - Handles localStorage persistence
 - Coordinates all CRUD operations
 
-## 📱 Mobile Responsiveness
+##  Mobile Responsiveness
 
 The application is fully responsive and includes:
 - Touch-friendly drag operations
@@ -97,22 +97,22 @@ The application is fully responsive and includes:
 - Accessible button sizes
 - Smooth scrolling for long task lists
 
-## 🎯 Evaluation Criteria Met
+##  Evaluation Criteria Met
 
-- ✅ **Functionality (30 points)**: All CRUD and drag/drop features work correctly
-- ✅ **UI/UX Design (25 points)**: Clean, modern, responsive, and intuitive interface
-- ✅ **Code Quality (20 points)**: Organized structure, reusable components, readable TypeScript code
-- ✅ **Interactivity (15 points)**: Smooth drag animations, instant updates, no bugs
-- ✅ **Presentation (10 points)**: Professional README with clear instructions
+- **Functionality (30 points)**: All CRUD and drag/drop features work correctly
+- **UI/UX Design (25 points)**: Clean, modern, responsive, and intuitive interface
+- **Code Quality (20 points)**: Organized structure, reusable components, readable TypeScript code
+- **Interactivity (15 points)**: Smooth drag animations, instant updates, no bugs
+- **Presentation (10 points)**: Professional README with clear instructions
 
-## 🎁 Bonus Features Implemented
+## Bonus Features Implemented
 
-- ✅ **localStorage Persistence**: Tasks persist across browser sessions
-- ✅ **Task Completion**: Checkbox with strike-through styling
-- ✅ **Timestamps**: Shows when each task was created
-- ✅ **Smooth Animations**: Enhanced user experience with transitions
+- **localStorage Persistence**: Tasks persist across browser sessions
+- **Task Completion**: Checkbox with strike-through styling
+- **Timestamps**: Shows when each task was created
+- **Smooth Animations**: Enhanced user experience with transitions
 
-## 🚀 Getting Started
+<!-- ##  Getting Started
 
 This project was bootstrapped with Vite and includes hot module replacement for fast development. The drag-and-drop functionality is powered by the excellent @dnd-kit library, providing smooth and accessible interactions.
 
@@ -150,4 +150,4 @@ This project helped me practice semantic HTML5, Tailwind css, and JavaScript bas
 Here's a screenshot of what i did.
 
 ![alt text](image.png)
-
+ -->
