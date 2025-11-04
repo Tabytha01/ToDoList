@@ -31,16 +31,17 @@ function addTask() {
   li.style.boxShadow = "0 4px 15px rgba(0,0,0,0.2)";
   
   var priority = prioritySelect.value;
+  // Use solid beige for cards and keep a colored left border to indicate priority
+  li.style.backgroundColor = "#f5f5dc"; // beige
   if (priority === "High") {
-    li.style.background = "linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%)";
     li.style.borderLeft = "4px solid #c92a2a";
   } else if (priority === "Medium") {
-    li.style.background = "linear-gradient(135deg, #ffd93d 0%, #f9ca24 100%)";
     li.style.borderLeft = "4px solid #f39c12";
   } else {
-    li.style.background = "linear-gradient(135deg, #6bcf7f 0%, #51cf66 100%)";
     li.style.borderLeft = "4px solid #2f9e44";
   }
+  // store priority explicitly so save/load don't rely on parsing CSS
+  li.setAttribute('data-priority', priority);
 
   var now = new Date();
   var dateTime = now.toLocaleString('en-US', { 
@@ -54,14 +55,15 @@ function addTask() {
   contentDiv.style.flex = "1";
   
   var textSpan = document.createElement("div");
-  textSpan.style.color = "white";
+  // dark text for beige card
+  textSpan.style.color = "#111827";
   textSpan.style.fontWeight = "600";
   textSpan.style.fontSize = "18px";
   textSpan.style.marginBottom = "4px";
   textSpan.textContent = text;
   
   var timeSpan = document.createElement("div");
-  timeSpan.style.color = "white";
+  timeSpan.style.color = "#374151"; // gray-600 on beige
   timeSpan.style.fontSize = "12px";
   timeSpan.style.opacity = "0.8";
   timeSpan.innerHTML = "📅 " + dateTime + " • " + priority;
@@ -157,12 +159,8 @@ function saveTasks() {
     var textSpan = items[i].querySelector("div > div:first-child");
     var timeSpan = items[i].querySelector("div > div:last-child");
     var isCompleted = textSpan.style.textDecoration === "line-through";
-    var bg = items[i].style.background;
-    var priority = "";
-    
-    if (bg.includes("#ff6b6b") || bg.includes("#ee5a6f")) priority = "High";
-    else if (bg.includes("#ffd93d") || bg.includes("#f9ca24")) priority = "Medium";
-    else priority = "Low";
+    // read priority from data attribute instead of parsing CSS
+    var priority = items[i].getAttribute('data-priority') || "Low";
     
     tasks.push({
       text: textSpan.textContent,
@@ -192,23 +190,22 @@ function loadTasks() {
     li.style.borderRadius = "16px";
     li.style.cursor = "pointer";
     li.style.boxShadow = "0 4px 15px rgba(0,0,0,0.2)";
-    
+    // solid beige cards on load; keep left border for priority
+    li.style.backgroundColor = "#f5f5dc";
     if (task.priority === "High") {
-      li.style.background = "linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%)";
       li.style.borderLeft = "4px solid #c92a2a";
     } else if (task.priority === "Medium") {
-      li.style.background = "linear-gradient(135deg, #ffd93d 0%, #f9ca24 100%)";
       li.style.borderLeft = "4px solid #f39c12";
     } else {
-      li.style.background = "linear-gradient(135deg, #6bcf7f 0%, #51cf66 100%)";
       li.style.borderLeft = "4px solid #2f9e44";
     }
+    li.setAttribute('data-priority', task.priority || 'Low');
 
     var contentDiv = document.createElement("div");
     contentDiv.style.flex = "1";
     
     var textSpan = document.createElement("div");
-    textSpan.style.color = "white";
+  textSpan.style.color = "#111827";
     textSpan.style.fontWeight = "600";
     textSpan.style.fontSize = "18px";
     textSpan.style.marginBottom = "4px";
@@ -219,10 +216,10 @@ function loadTasks() {
       textSpan.style.opacity = "0.6";
     }
     
-    var timeSpan = document.createElement("div");
-    timeSpan.style.color = "white";
-    timeSpan.style.fontSize = "12px";
-    timeSpan.style.opacity = "0.8";
+  var timeSpan = document.createElement("div");
+  timeSpan.style.color = "#374151";
+  timeSpan.style.fontSize = "12px";
+  timeSpan.style.opacity = "0.8";
     timeSpan.textContent = task.time;
     
     contentDiv.appendChild(textSpan);
@@ -312,12 +309,12 @@ darkModeBtn.onclick = function() {
   isDarkMode = !isDarkMode;
   
   if (isDarkMode) {
-    document.body.style.background = "linear-gradient(to bottom right, #1a1a2e, #16213e, #0f3460)";
+    document.body.style.backgroundColor = "navy";
     darkModeBtn.innerHTML = " Light Mode";
     darkModeBtn.style.backgroundColor = "#fbbf24";
     darkModeBtn.style.color = "#111827";
   } else {
-    document.body.style.background = "linear-gradient(to bottom right, #a855f7, #ec4899, #3b82f6)";
+    document.body.style.backgroundColor = "navy";
     darkModeBtn.innerHTML = " Dark Mode";
     darkModeBtn.style.backgroundColor = "#1f2937";
     darkModeBtn.style.color = "white";

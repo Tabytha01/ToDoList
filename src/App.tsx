@@ -83,14 +83,14 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#689071] flex items-center justify-center p-4">
       <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl p-8 w-full max-w-2xl shadow-2xl border border-white border-opacity-30">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-5xl font-bold mb-2 text-white animate-pulse-slow">
+          <h1 className="text-5xl font-bold mb-2 text-black animate-pulse-slow">
             Todo List
           </h1>
-          <p className="text-white text-sm opacity-90">
+          <p className="text-white text-boldtext-sm opacity-90">
             Drag and drop to reorder your tasks
           </p>
         </div>

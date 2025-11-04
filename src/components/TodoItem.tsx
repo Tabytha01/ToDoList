@@ -30,8 +30,8 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onDelete, onToggle }) => {
       style={style}
       className={`
         group flex items-center justify-between p-5 rounded-2xl shadow-lg
-        bg-white bg-opacity-90 backdrop-blur-sm border border-white border-opacity-50
-        hover:bg-opacity-100 hover:shadow-xl transition-all duration-200
+        bg-[#f5f5dc] border border-[#f5f5dc] text-gray-800
+        hover:shadow-xl transition-all duration-200
         ${isDragging ? 'dragging' : ''}
         ${todo.completed ? 'opacity-75' : ''}
       `}

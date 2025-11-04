@@ -45,7 +45,7 @@ const AddTodoForm: React.FC<AddTodoFormProps> = ({ onAddTodo }) => {
           type="submit"
           disabled={!inputValue.trim()}
           className="
-            px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white 
+            px-8 py-4 bg-[#BDC4D4] text-white 
             rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl
             disabled:opacity-50 disabled:cursor-not-allowed
             hover:from-purple-700 hover:to-pink-700 transform hover:scale-105
