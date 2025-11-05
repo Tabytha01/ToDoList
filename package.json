@@ -1,11 +1,12 @@
 {
+  "type": "module", 
   "name": "react-todo-drag-drop",
   "version": "1.0.0",
   "description": "Interactive React Todo List with Drag & Drop functionality",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build", 
     "preview": "vite preview",
     "type-check": "tsc --noEmit"
   },
@@ -28,5 +29,9 @@
   },
   "keywords": ["react", "typescript", "todo", "drag-drop", "tailwindcss"],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
 }
